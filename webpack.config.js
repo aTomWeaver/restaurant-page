@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
+      template: 'src/template.html'
     }),
   ],
   output: {
@@ -29,5 +30,5 @@ module.exports = {
       },
     ]
   },
-  watch: true,
+  // watch: true,
 };
