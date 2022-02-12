@@ -1,12 +1,12 @@
 export default function renderLanding() {
-
-    const content = document.createElement('div');
-    content.id = 'content';
+    
+    const content = document.getElementById('content');
+    content.innerHTML = '';
 
     const imgCtr = document.createElement('div');
     const img = document.createElement('img');
     img.src = 'https://i.redd.it/hj4dr1lonal31.png';
-    img.width = '100';
+    img.width = '500';
     imgCtr.appendChild(img);
 
     const quoteCtr = document.createElement('div');

@@ -1,12 +1,101 @@
+@font-face {
+    font-family: 'Artbrush';
+    src: url('fonts/Artbrush.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('fonts/Roboto-LightItalic.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.woff') format('woff');
+    font-style: normal;
+}
+
 body {
     background: url('restaurant_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo {
+    position: relative;
+    margin: 20px;
+    padding: 5px;
+    font-family: 'Artbrush';
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+
+#nav {
+    /* DISPLAY */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-self: center;
+
+    /* SIZING */
+    height: 50px;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+
+    /* FONT */
+    font-family: 'Roboto-Medium'; 
+    font-size: 20px;
+
+    /* MISC */
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+
+#nav > li:hover {
+    transform: scale(1.2);
 }
 
 #content {
+    /* DISPLAY */
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.35);
+
+    /* SIZING */
+    width: 600px;
+    padding-top: 20px;
+
+    /* FONT */
+    font-family: 'Roboto-LightItalic';
+    font-size: 25px;
+
+    /* MISC */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.45);
 }
+
 
