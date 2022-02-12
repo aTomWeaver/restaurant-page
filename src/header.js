@@ -11,22 +11,16 @@ export default function renderHeader() {
     nav.id = 'nav';
 
     const home = document.createElement('li');
-    const homeLink = document.createElement('a');
-    homeLink.href = '#';
-    homeLink.innerText = 'Home';
-    home.appendChild(homeLink);
+    home.id = 'link-home'
+    home.innerText = 'Home';
 
     const menu = document.createElement('li');
-    const menuLink = document.createElement('a');
-    menuLink.href = '#';
-    menuLink.innerText = 'Menu';
-    menu.appendChild(menuLink);
+    menu.id = 'link-menu'
+    menu.innerText = 'Menu';
 
     const contact = document.createElement('li');
-    const contactLink = document.createElement('a');
-    contactLink.href = '#';
-    contactLink.innerText = 'Contact';
-    contact.appendChild(contactLink);
+    contact.id = 'link-contact';
+    contact.innerText = 'Contact';
 
     nav.append(home, menu, contact);
     navCtr.appendChild(nav);

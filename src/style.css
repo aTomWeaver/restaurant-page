@@ -27,20 +27,6 @@ body {
     height: 90vh;
 }
 
-a {
-	color: rgb(255, 255, 255);
-	background-image: linear-gradient(to bottom, transparent 65%, #de9143 0);
-	background-size: 0% 100%;
-	background-repeat: no-repeat;
-	text-decoration: none;
-	transition: background-size .4s ease;
-}
-
-a:hover {
-	background-size: 100% 100%;
-	cursor: pointer;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -83,9 +69,19 @@ header {
     border-radius: 10px;
 }
 
-/* #nav > li:hover {
-    transform: scale(1.2);
-} */
+#nav > li {
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to bottom, transparent 65%, #de9143 0);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	transition: background-size .4s ease;
+}
+
+#nav > li:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
 
 #content {
     /* DISPLAY */
