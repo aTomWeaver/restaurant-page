@@ -28,8 +28,17 @@ body {
 }
 
 a {
-    color: white;
-    text-decoration: none; 
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to bottom, transparent 65%, #de9143 0);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	transition: background-size .4s ease;
+}
+
+a:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 header {
@@ -70,13 +79,13 @@ header {
 
     /* MISC */
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(139, 76, 34, 0.45);
     border-radius: 10px;
 }
 
-#nav > li:hover {
+/* #nav > li:hover {
     transform: scale(1.2);
-}
+} */
 
 #content {
     /* DISPLAY */
@@ -96,6 +105,11 @@ header {
     /* MISC */
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+#main-image {
+    width: 200px;
+    border-radius: 10px;
 }
 
 
