@@ -1,7 +1,6 @@
 import Menu from './menu-items.json';
 import './menu.css';
 
-const keys = Object.keys(Menu);
 
 export default function renderMenu() {
     const content = document.getElementById('content');
@@ -12,8 +11,10 @@ export default function renderMenu() {
 
     const menu = document.createElement('div');
     menu.id = 'menu';
+
+    const keys = Object.keys(Menu);
     
-    // render each item in a card
+    // render each menu item in a card
     for (let i = 0; i < keys.length; i++) {
         const itemCtr = document.createElement('div');
         itemCtr.classList.add('item-ctr');

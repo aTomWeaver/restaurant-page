@@ -88,7 +88,8 @@ header {
     /* DISPLAY */
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    padding: 20px 20px 60px 20px;
     align-items: center;
 
     /* SIZING */
@@ -101,7 +102,7 @@ header {
 
     /* MISC */
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.6);
     transition: all 2s linear;
 }
 
@@ -123,3 +124,17 @@ header {
     transform: scale(1.2);
 }
 
+#hours-ctr {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#hours-ctr > h2 {
+    font-family: 'Roboto-Medium';
+    margin: 0px;
+}
+#hours > p { 
+    margin: 0px 0px 10px 0px;
+    font-size: 20px;
+}

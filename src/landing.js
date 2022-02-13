@@ -16,10 +16,35 @@ export default function renderLanding() {
 
     const quoteCtr = document.createElement('div');
     const quote = document.createElement('p');
-    quote.innerText = 'Suck it down and poop like a regular man.';
+    quote.innerText = '\"Suck it down and poop like a regular man.\"';
     quoteCtr.append(quote);
 
-    content.append(imgCtr, quoteCtr);
+    const Weekdays = [
+        'Monday', 'Tuesday', 'Wednesday', 'Thursday',
+        'Friday', 'Saturday', 'Sunday'
+    ];
+    const Hours = [
+        '5am - 10pm', '5am - 10pm', '5am - 10pm', '5am - 10pm', 
+        '5am - 10pm', '7am - 11pm', 'Closed'
+    ];
+
+    const hoursCtr = document.createElement('div');
+    hoursCtr.id = 'hours-ctr';
+    const hoursTitle = document.createElement('h2');
+    hoursTitle.innerText = 'Hours';
+    const hours = document.createElement('div');
+    hours.id = 'hours';
+    
+    // render weekdays and hours from array and append to 'hours' div 
+    for (let i = 0; i < 7; i++) {
+        const day = document.createElement('p');
+        day.innerText = `${Weekdays[i]}: ${Hours[i]}`
+        hours.appendChild(day);
+    }
+
+    hoursCtr.append(hoursTitle, hours);
+
+    content.append(imgCtr, quoteCtr, hoursCtr);
     document.body.append(content);
 
 }

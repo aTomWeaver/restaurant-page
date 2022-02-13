@@ -26,4 +26,4 @@ renderLanding();
 
 
 
-console.log('everything appears to be hipping and flopping!');
+console.log('everything appears to be hipping and hooping!');
