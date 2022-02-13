@@ -1,11 +1,36 @@
+import Menu from './menu-items.json'
+const keys = Object.keys(Menu);
+
 export default function renderMenu() {
     const content = document.getElementById('content');
+
     content.innerHTML = '';
     content.classList.remove('content-narrow');
     content.classList.add('content-wide');
 
     const menu = document.createElement('div');
-    menu.innerText = 'testing testing get some burgers';
+    menu.id = 'menu';
+    
+    // render each item in a card
+    for (let i = 0; i < keys.length; i++) {
+        const itemCtr = document.createElement('div');
+        itemCtr.classList.add('item-ctr');
+
+        const itemObj = Menu[keys[i]];
+
+        const img = document.createElement('img');
+        const name = document.createElement('h2');
+        const kcal = document.createElement('p');
+        const price = document.createElement('p');
+        img.src = itemObj.image;
+        name.innerText = itemObj.name;
+        kcal.innerText = itemObj.kcal;
+        price.innerText = itemObj.price;
+
+        itemCtr.append(img, name, kcal, price);
+        menu.append(itemCtr);
+    }
+
 
     content.appendChild(menu);
     document.body.appendChild(content);

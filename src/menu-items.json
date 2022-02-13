@@ -1,0 +1,38 @@
+{
+    "Bacon Cheeseburger": {
+        "name": "Bacon Cheeseburger",
+        "kcal": "406",
+        "price": "5.00",
+        "image": "/src/img/menu/jr-bacon-cheeseburger.png"
+    },
+    "Cheeseburger Deluxe": {
+        "name": "Cheeseburger Deluxe",
+        "kcal": "375",
+        "price": "7.00",
+        "image": "/src/img/menu/jr-cheeseburger-deluxe.png"
+    },
+    "Baconator": {
+        "name": "Baconator",
+        "kcal": "1010",
+        "price": "6.00",
+        "image": "/src/img/menu/baconator.png"
+    },
+    "Dave's Single": {
+        "name": "Dave's Single",
+        "kcal": "611",
+        "price": "6.00",
+        "image": "/src/img/menu/daves-single.png"
+    },
+    "Dave's Double": {
+        "name": "Dave's Double",
+        "kcal": "888",
+        "price": "7.00",
+        "image": "/src/img/menu/daves-double.png"
+    },
+    "Dave's Triple": {
+        "name": "Dave's Triple",
+        "kcal": "1204",
+        "price": "8.00",
+        "image": "/src/img/menu/daves-triple.png"
+    }
+}

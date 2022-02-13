@@ -15,16 +15,17 @@
 }
 
 body {
-    background: url('restaurant_bg.jpg');
+    background: #000000 url('restaurant_bg.jpg') 0 0 no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -115,6 +116,10 @@ header {
 #main-image {
     width: 200px;
     border-radius: 10px;
+    transition: all .5s;
 }
 
+#main-image:hover {
+    transform: scale(1.2);
+}
 
