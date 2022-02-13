@@ -6,10 +6,13 @@ export default function renderLanding() {
     content.classList.add('content-narrow');
 
     const imgCtr = document.createElement('div');
+    const link = document.createElement('a');
+    link.href = 'https://www.youtube.com/watch?v=t5OmwqF0WIw';
     const img = document.createElement('img');
     img.src = 'https://i.redd.it/hj4dr1lonal31.png';
     img.id = 'main-image';
-    imgCtr.appendChild(img);
+    link.append(img);
+    imgCtr.appendChild(link);
 
     const quoteCtr = document.createElement('div');
     const quote = document.createElement('p');

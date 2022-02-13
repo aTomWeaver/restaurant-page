@@ -15,7 +15,7 @@
 }
 
 body {
-    background: #000000 url('restaurant_bg.jpg') 0 0 no-repeat;
+    background: #000000 url('/src/img/restaurant_bg.jpg') 0 0 no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 

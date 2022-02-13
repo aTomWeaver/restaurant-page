@@ -8,6 +8,8 @@ import renderContact from './contact';
 
 // header render
 renderHeader();
+
+// get nav elements and bind events
 const homeLink = document.getElementById('link-home');
 const menuLink = document.getElementById('link-menu');
 const contactLink = document.getElementById('link-contact');
@@ -17,6 +19,10 @@ contactLink.addEventListener('click', renderContact);
 
 // landing page render
 renderLanding();
+
+
+
+
 
 
 
