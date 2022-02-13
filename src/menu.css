@@ -1,0 +1,36 @@
+img {
+    width: 200px;
+}
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.item-ctr {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.item-ctr > * {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.item-ctr > img {
+    align-self: center;
+}
+
+.item-ctr > h2 {
+    color: #de9143;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.item-ctr > p {
+    font-size: 20px;
+}

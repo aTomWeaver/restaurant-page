@@ -1,4 +1,6 @@
-import Menu from './menu-items.json'
+import Menu from './menu-items.json';
+import './menu.css';
+
 const keys = Object.keys(Menu);
 
 export default function renderMenu() {
@@ -24,7 +26,7 @@ export default function renderMenu() {
         const price = document.createElement('p');
         img.src = itemObj.image;
         name.innerText = itemObj.name;
-        kcal.innerText = itemObj.kcal;
+        kcal.innerText = itemObj.kcal + ' kcal';
         price.innerText = itemObj.price;
 
         itemCtr.append(img, name, kcal, price);
