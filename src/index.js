@@ -4,12 +4,10 @@ import renderLanding from './landing';
 import renderMenu from './menu';
 import renderContact from './contact';
 
-// const content = document.getElementById('content');
-
 // header render
 renderHeader();
 
-// get nav elements and bind events
+// get nav tabs and bind events
 const homeLink = document.getElementById('link-home');
 const menuLink = document.getElementById('link-menu');
 const contactLink = document.getElementById('link-contact');

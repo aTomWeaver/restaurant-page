@@ -35,6 +35,10 @@ header {
     flex-direction: column;
 }
 
+h2 {
+    font-family: 'Roboto-Medium';
+}
+
 #logo {
     position: relative;
     margin: 20px;
@@ -89,12 +93,11 @@ header {
     display: flex;
     flex-direction: column;
     /* flex-grow: 1; */
-    padding: 20px 20px 60px 20px;
     align-items: center;
 
     /* SIZING */
     /* width: 600px; */
-    padding-top: 20px;
+    padding: 20px 20px 60px 20px;
 
     /* FONT */
     font-family: 'Roboto-LightItalic';
@@ -111,7 +114,8 @@ header {
 }
 
 .content-narrow {
-    width: 600px;
+    min-width: 600px;
+    width: max-content;
 }
 
 #main-image {

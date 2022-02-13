@@ -3,18 +3,11 @@ import './menu.css';
 
 
 export default function renderMenu() {
-    const content = document.getElementById('content');
-
-    content.innerHTML = '';
-    content.classList.remove('content-narrow');
-    content.classList.add('content-wide');
-
     const menu = document.createElement('div');
     menu.id = 'menu';
 
-    const keys = Object.keys(Menu);
-    
     // render each menu item in a card
+    const keys = Object.keys(Menu);
     for (let i = 0; i < keys.length; i++) {
         const itemCtr = document.createElement('div');
         itemCtr.classList.add('item-ctr');
@@ -34,7 +27,11 @@ export default function renderMenu() {
         menu.append(itemCtr);
     }
 
-
+// APPEND CONTENT
+    const content = document.getElementById('content');
+    content.innerHTML = '';
+    content.classList.remove('content-narrow');
+    content.classList.add('content-wide');
     content.appendChild(menu);
     document.body.appendChild(content);
 }

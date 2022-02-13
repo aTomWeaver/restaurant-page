@@ -1,0 +1,13 @@
+#contact-ctr {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#contact-ctr > * {
+    margin: 10px;
+}
+
+#contact-ctr > button {
+    width: max-content;
+    margin-top: 0px;
+}
